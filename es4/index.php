@@ -1,4 +1,5 @@
 <?php
+header("Content-Type: application/json");
     require_once("Studente.php");
     $studenti = [];
     $studente1 = new Studente("Francesco", "Bianchi", "123");
@@ -6,9 +7,6 @@
     array_push($studenti, $studente1);
     array_push($studenti, $studente2);
 
-    echo "<h2>Lista studenti: </h2><br>";
-    foreach($studenti as $studente){
-        $studente -> stampaStudente();
-    }
+    echo json_encode($studenti);
     
 ?>

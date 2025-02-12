@@ -1,9 +1,11 @@
 <?php
     require_once("Animale.php");
-    class Cane extends Animale{
+    class Cane extends Animale implements JsonSerializable{
 
-        function versoAnimale(){
-            echo "Verso del cane";
+        function jsonSerialize(): array{
+            return [
+                'verso' => "baubau"
+            ];
         }
 }
 ?>

@@ -1,5 +1,6 @@
 <?php
+header("Content-Type: application/json");
     require_once("Cane.php");
     $cane = new Cane();
-    $cane -> versoAnimale();
+    echo json_encode($cane);
 ?>
