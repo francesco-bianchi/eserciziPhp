@@ -1,0 +1,46 @@
+[
+    {
+      "nome": "Francesco",
+      "cognome": "Bianchi",
+      "eta": 18,
+      "indirizzo": {
+        "via": "via x dicembre",
+        "numero_civico": 1,
+        "codice_postale": 50121
+      },
+      "voti_alunni": [
+        {
+          "voto": 8,
+          "materia": "matematica",
+          "descrizione": "buono"
+        },
+        {
+          "voto": 7,
+          "materia": "italiano",
+          "descrizione": "bene"
+        }
+      ]
+    },
+    {
+      "nome": "Leonardo",
+      "cognome": "Iarossi",
+      "eta": 18,
+      "indirizzo": {
+        "via": "via xv dicembre",
+        "numero_civico": 1,
+        "codice_postale": 50121
+      },
+      "voti_alunni": [
+        {
+          "voto": 8,
+          "materia": "matematica",
+          "descrizione": "buono"
+        },
+        {
+          "voto": 7,
+          "materia": "italiano",
+          "descrizione": "bene"
+        }
+      ]
+    }
+  ]

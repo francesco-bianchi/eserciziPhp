@@ -1,22 +1,32 @@
 <?php
-    class Alunni implements JsonSerializable{
+require_once("Indirizzo.php");
+require_once("Voto.php");
+    class Alunno implements JsonSerializable{
         protected $nome;
         protected $cognome;
         protected $eta;
+        protected $indirizzo;
+        protected $voti_alunni = [];
+        
 
-    function jsonSerialize(): array{
-        return [
-            'name' => $this->nome,
-            'surname' => $this->cognome,
-            'age' => $this->eta
-        ];
-    }
-    
-    function __construct($nome, $cognome, $eta) {
+    function __construct($nome, $cognome, $eta, $indirizzo, $voti_alunni) {
         $this->nome = $nome;
         $this->cognome = $cognome;
         $this->eta = $eta;
+        $this->indirizzo = $indirizzo;
+        $this->voti_alunni = $voti_alunni;
     }
+
+    function jsonSerialize(): array{
+        return [
+            'nome' => $this->nome,
+            'cognome' => $this->cognome,
+            'eta' => $this->eta,
+            'indirizzo' => $this->indirizzo,
+            'voti_alunni' => $this->voti_alunni
+        ];
+    }
+    
 
     function set_cognome($cognome) {
         $this->cognome = $cognome;
